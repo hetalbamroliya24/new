@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>toogal</title>
+  
+
+  <!-----------------------FONT-AWESOME------------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <!-- ............... ......................slickk slider......................... -->
+
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">  
+
+<style>
+  body{
+    background-color:#45748f ;
+  }  
+.header {
+    background-color: #2e3840;
+    display: flex;
+    align-items: center;
+}
+
+header .menu {
+    padding-left: 59px;
+    height: 10px;
+}
+
+header ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+
+header ul li {
+    display: inline-block;
+    
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    
+}
+ 
+header ul li a .icon {
+    display: none;
+}
+.header ul li a:hover {
+    color: #1DA6F3;
+
+    text-decoration: underline;
+
+}
+.contact_icone {
+
+align-items: center;
+display: flex;
+font-size: 20px;
+}
+
+a {
+padding: 0px;
+font-size: 20px;
+}
+
+i {
+padding: 0px 8px;
+color: #fff;
+justify-content: space-between;
+}
+
+.contact_icone i:hover {
+color: #1DA6F3;
+}
+
+.header .logo {
+display: flex;
+align-items: center;
+}
+
+.header .logo img {
+width: 400px;
+padding-top: 0px;
+}
+header #toogal{
+    color: #FFFf;
+    font-size: 30px;
+    line-height: 30px;
+    float: right;
+    
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width: 1246px) {
+header.logo{
+    font-size: 30px;
+    padding-left: 60px;
+}
+
+header a{
+    font-size: 20px;
+
+}
+
+
+}
+@media only screen and (max-width: 1200px) {
+    header #toogal{
+        display: block;
+    }
+    header ul{
+        position: fixed;
+       
+        /* height: 100vh; */
+        background: #2e3840;
+        top: 20px;
+        
+        text-align: center;
+        transition: all .5s;
+    }
+    header li{
+        display: block;
+        /* margin: 50px 0; */
+        line-height: 30px;
+
+    }
+    header a{
+        font-size: 20px;
+    }
+    header ul.show{
+        left: 0;
+    }
+}
+
+
+
+
+
+</style>
+
+<BOdy>
+    <header class="header">
+        <div class="logo">
+           <img src="img/logo.png"> 
+    
+        </div>
+        
+            <div class="navbar">
+              <ul>
+                <li><a href="#" Shops>Shops</a></li>
+                <li><a href="#" About us>About us</a></li>
+                <li><a href="#" Warranty>Warranty</a></li>
+                <li><a href="#" Tools>Tools</a></li>
+                <li><a href="#" Careers>Careers</a></li>
+                <li><a href="#" Contack us>Contack us</a></li>
+            </ul>
+        </div>
+        <label id="toogal">
+            <i class="fa fa-bars"></i>
+        </label>
+        
+        <!-- <div>
+                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></li>
+                  </a>  -->
+                
+        <!-- .............................icon.................................. -->
+        <div class="contact_icone">
+          <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href=""> <i class="fa-solid fa-circle-user"></i></a>
+          <a href=""> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        </div>
+      </header>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+       <script src="js/slick.min.js"></script> 
+      <script>
+        $(document).ready(function(){
+            $('#toogal').click(function(){
+                $('ul').toogalclass('show');
+            })
+        })
+      </script>
+</BOdy>
+</html>
